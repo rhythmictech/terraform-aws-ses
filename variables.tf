@@ -9,6 +9,13 @@ variable "zone_id" {
   default     = ""
 }
 
+variable "create_dns_records" {
+  type        = bool
+  description = "Whether to create route53 records for SES dkim verification"
+  default     = false
+}
+
+
 variable "ses_records" {
   description = "Additional entries which are added to the _amazonses record"
   type        = list(string)
