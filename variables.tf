@@ -9,5 +9,6 @@ variable "zone_id" {
 
 variable "ses_records" {
   description = "Additional entries which are added to the _amazonses record"
-  default = []
+  default     = []
 }
+
